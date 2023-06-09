@@ -94,8 +94,7 @@
     .abouthydrogen{ 
 
         width:22vw;
-        height:150px;
-        border: 2px #00001a;
+        height:30%; 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -108,8 +107,7 @@
         display: flex;
         flex-direction: column;
         width:22vw;
-        height:140px;
-        border: 2px solid #00001a;
+        height:30%;
         justify-content: space-evenly;
         color: white;
     }
@@ -119,8 +117,7 @@
 
         display: flex;
         width:22vw;
-        height:140px;
-        border: 2px solid #00001a;
+        height:30%;
         justify-content: space-evenly;
         flex-direction: column;
         color:white
@@ -144,7 +141,6 @@
         display: flex;
         width:19vw;
         height:20px;
-        border: 2px #00001a;
         justify-content: center;
         color: white;
 
@@ -212,7 +208,6 @@
 
         display: flex;
         width:100px;
-        height:100px;
         border:2px  #00001a;
     }
 
@@ -266,8 +261,7 @@
 
         display: flex;
         width: 10vw;
-        height:40px;
-        border: 2px solid white;
+        height:5vh;
         justify-content: center;
         align-items: center;
         background-color: #f15d51;
@@ -339,7 +333,7 @@
 
         display: flex;
         width:8vw;
-        height:35vh;
+        
         border: 2px solid white;
 
     }
@@ -360,7 +354,6 @@
 
         display: flex;
         width:8vw;
-        height:35vh;
         border: 2px solid white;
 
     }
@@ -382,7 +375,6 @@
 
         display: flex;
         width:8vw;
-        height:35vh;
         border: 2px solid white;
 
     }
@@ -489,7 +481,231 @@
     }
 
 
+    .lines{ 
 
+        display: none;
+    }
+
+
+    @media (max-width:500px) { 
+
+
+        .pic{ 
+
+            width:100%;
+            
+        }
+
+        .webpic{
+
+            width:100%;
+        }
+
+
+        .lines{ 
+
+            display:block;
+            
+        }
+
+        .headline{ 
+
+            display: none;
+        }
+
+        article,.header{ 
+
+            display: block;
+        
+        }
+
+        .lastfooter{ 
+
+            display: block;
+        }
+
+        .mainheader,.maincontents{ 
+
+            display: block;
+
+        }
+
+        .information{ 
+
+            display: flex;
+            margin-top: 70%;
+            height: 140%;
+            justify-content: space-between;
+        }
+
+        .mid{ 
+
+            
+            width: 10vw;
+        
+        }
+
+
+        .lastfooter{ 
+
+            display: block;
+            
+        }
+
+        .header{ 
+
+            width: 100%;
+        }
+
+        .mainheader{ 
+
+            width: 100%;
+        }
+
+        .maincontent{ 
+
+            display: block;
+            width: 100%;
+        }
+
+        .maincontents{ 
+
+            display: block;
+            width:100%;
+            margin-top: 20%;
+        }
+
+        .button{ 
+
+            width: 40%;
+        }
+
+        .mainheader,.maincontents{ 
+
+            display: block;
+    
+        }
+
+        .information,.abouthydrogen,.aboutai,.aboutvs{ 
+
+            width: 100%;
+        }
+
+        .head{ 
+
+            width: 20%;
+        }
+
+        .mid,.last,.the,.what,.is,.private{ 
+
+            width:70%;
+        }
+
+        .lastfooter{ 
+
+            display: block;
+            width: 100%;
+            margin-top: 280%;
+            
+        }
+
+        .reviving,.laptops,.gaming{ 
+
+            width: 100%;
+        }
+
+        .pcpic,.pcinf{ 
+
+            width:50%;
+        }
+
+        .pcpics,.lappics,.gamepics{ 
+
+            width: 100%;
+        }
+
+        .lappic,.lapinf{    
+
+            width:50%
+        }
+
+        .gamepic,.gameinf{ 
+
+            width:50%;
+        }
+
+        .abouthydrogen{ 
+
+            align-items: start;
+        }
+
+
+        .mid{ 
+
+            width: 80%;
+            
+            
+        }
+
+        .head{ 
+
+            width:25%
+        }
+
+        .last{ 
+
+            width: 100%;
+            
+        }
+
+        hr{ 
+
+            width: 90%;
+            justify-content: center;
+        }
+
+        .the{
+
+            width: 89%;
+            
+        }
+
+        .what{ 
+
+            width:98%;
+            
+        }
+
+
+        .is{ 
+
+            width: 83%;
+
+        }
+
+
+        .private{ 
+
+            width:90%;
+        }
+
+        .laptops,.gaming{ 
+
+            margin-top: 10%;
+        }
+
+        .header{ 
+
+            margin-top: 10%;
+        }
+
+        .pic{ 
+
+            margin-top: 10%;
+        }
+        }
+    
+    
     </style>
 </head>
 <body>
@@ -508,6 +724,11 @@
                 <div class="categories"> Categories</div>
             </div>
 
+            
+            <img class="lines"
+                
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEX///8AAADl5eX09PTV1dUICAiurq5TU1Orq6tJSUnc3Nzt7e1ERET6+vpRUVG9vb0gCS9GAAAA8ElEQVR4nO3dOQ4CQRAEQZblPv//W2yUFsLoNSKekGb1SLPbAQAAAAAAAAAAAADfbodh9+kC9ViGXaYL1Hm6yWm6QGlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJnWdbrLBjXqd9pwuAAAAAMCvzstx1Ba3x9f09rjBJjbq0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClvQet9mnW5TRcAAAAAgP/d98PW6QJljy27fWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJuWPs3LLAAAAAAAAAAAAAGAbPhzZL1DD5UvKAAAAAElFTkSuQmCC">
+        
         </section>
         
         <article> 
@@ -516,7 +737,7 @@
 
                 <div class="pic"> 
                     <img class="webpic"
-                    src="image-web-3-desktop.jpg">
+                    src="../assets/images/image-web-3-desktop.jpg">
                 </div>
 
                 <div class="header"> 
@@ -553,17 +774,20 @@
                 <div class="aboutvs">
                     <div class="is"> <h3> Is VS Funding Drying Up? </h3> </div>
                     <div class="private"> Private funding by VC films is down 50% YOY.We take a look at what that means. </div>
-                    <hr> 
+                    
                 </div>
             </div>
 
         </article>
 
         <div class="lastfooter"> 
+
             <div class="reviving"> 
+
                 <div class="pcpic">
+
                     <img class="pcpics"
-                    src="image-retro-pcs.jpg"> 
+                    src="../assets/images/image-retro-pcs.jpg"> 
                 </div>
                 <div class="pcinf"> 
                     <div class="on"> <h1> 01 </h1> </div>
@@ -576,19 +800,19 @@
             <div class="laptops"> 
                 <div class="lappic"> 
                     <img class="lappics"
-                    src="image-top-laptops.jpg">
+                    src="../assets/images/image-top-laptops.jpg">
                 </div>
                 <div class="lapinf"> 
                     <div class="two"> <h1> 02</h1></div>
                     <div class="laphead"> <h4> Top 10 Laptops of 2022 </h4> </div>
                     <div class="laplast"> <P> Our best pic for verious needs and budgets. </P> </div>
-                </div>c
+                </div>
             </div>
 
             <div class="gaming">
                 <div class="gamepic"> 
                     <img class="gamepics"
-                    src="image-gaming-growth.jpg">
+                    src="../assets/images/image-gaming-growth.jpg">
                 </div>
                 <div class="gameinf">
                     <div class="three"> <h1> 03 </h1> </div>
