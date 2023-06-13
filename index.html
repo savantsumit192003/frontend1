@@ -2,826 +2,221 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style> 
 
-
-
     *{ 
+
         margin:0px;
         padding:0px;
+    
     }
 
+    .main{ 
 
-    main{ 
-
-        margin: 15%;  
         width:70vw;
-        height:130vh;
-        border: 2px solid white;
+        margin:15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-template-rows: 1fr ;
+    
     }
 
+    .child:nth-child(1){ 
 
-    section{ 
+        display: grid;
+        background-color:orange;
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr ;
+        border-radius: 10px 0px 0px 10px;
 
-        display: flex;
-        width:70vw;
-        height:40px;
-        border: 2px solid white;
-        justify-content: space-between;
-
+    
     }
 
+    .logo:nth-child(1){ 
 
-    .logo{ 
-
-        width:70px;
-        height:40px;
-        border: 2px solid white;
-    }
-
-
-    .headline{ 
-
-        display: flex;
-        width:400px;
-        height:40px;
-        border: 2px solid white;
-        justify-content: space-between;
-        align-items: end;
-        color: gray;
+        grid-column: 2/3;
+        grid-row: 2/3;
 
     }
 
+    .sedans:nth-child(2){ 
 
-    article{ 
-
-        margin-top: 2%;
-        width:70vw;
-        height:500px;
-        border: 2px solid white;
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    .footer{ 
-
-        width:45vw;
-        height:77vh;
-        border: 2px solid white;
-
-    }
-
-
-    .information{ 
-
-        width:22vw;
-        height:77vh;
-        border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        align-items: center;
-        background-color:#00001a;
-
-    }
-   
-
-    .abouthydrogen{ 
-
-        width:22vw;
-        height:30%; 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        color: white;
+        font-size: 100%;
         
     }
 
+    .content:nth-child(3){ 
 
-    .aboutai{ 
-
-        display: flex;
-        flex-direction: column;
-        width:22vw;
-        height:30%;
-        justify-content: space-evenly;
+        grid-column:2/3;
+        grid-row: 5/6;
         color: white;
     }
 
+    .button:nth-child(4){ 
 
-    .aboutvs{ 
-
+        grid-column:2/3;
+        grid-row: -2/-3;
+        border-radius: 20px;
+        width: 70%;
+        background-color: white;
         display: flex;
-        width:22vw;
-        height:30%;
-        justify-content: space-evenly;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .learnmore:nth-child(1){ 
+
+        color: orange;
+        justify-self: center;
+    
+    }
+
+    .secondchild:nth-child(2){ 
+
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr ;
+        background-color: #016972;
+
+    }
+
+    .logosuvs:nth-child(1){ 
+
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .suvs:nth-child(2){ 
+
+        grid-column: 2/3;
+        grid-row:4/5;
+        color: white;
+    }
+
+    .contents:nth-child(3){ 
+
+        grid-column: 2/3;
+        grid-row: 5/6;
+        color: white;
+    }
+
+    .buttons:nth-child(4){ 
+
+        grid-column: 2/3;
+        grid-row: 7/-2;
+        width: 70%;
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         
+    }
+    
+    .learnnmore:nth-child(1){ 
+
+        color:#016972;
+
+
+
+    }
+
+    .thirdchild:nth-child(3){ 
+        
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr ;
+        background-color:#00403f;
+        border-radius: 0px 10px 10px 0px;
+
+    }
+
+    .logoluxury:nth-child(1){ 
+
+        grid-column:2/3;
+        grid-row:2/3;
+    }
+
+    .luxury:nth-child(2){ 
+
+        grid-column:2/3;
+        grid-row: 4/5;
         color:white
     }
-
-
-    .head{ 
-
-        width: 80px;
-        height:20px;
-        border: 2px  #00001a;
-        display: flex;
-        justify-content: center;
-        color:#e7a94e;
-
-    }
     
+    .learnsmore:nth-child(1){ 
 
-    .mid{ 
-
-        display: flex;
-        width:19vw;
-        height:20px;
-        justify-content: center;
-        color: white;
-
-    }
-
-
-    .last{ 
-
-        display: flex;
-        width:20vw;
-        height:40px;
-        border: 2px  #00001a;
-        justify-content:center ;  
-        color: white; 
-        padding:10px;   
-        color: #ababc1;
-        
-    }
-
-    .the{ 
-
-        display: flex;
-        width:20vw;
-        height:50px;
-        border:2px ;
-        justify-content: center;
-
-    }
-    
-
-    .what{ 
-
-        display: flex;
-        width:22vw;
-        height:50px;
-        justify-content: center;
-        color:#ababc1;
+        color:#00403f;
     
     }
 
+    @media(max-width:425px){ 
 
-    .is{ 
-
-        display: flex;
-        width: 19vw;
-        height:20px;
-        border: 2px solid #00001a;
-        justify-content: center;
-
-    }
-
-
-    .private{ 
-
-        display: flex;
-        width:22vw;
-        height:50px;
-        padding:10px;
-        color: #ababc1;
-
-    }
-
-
-    .box{ 
-
-        display: flex;
-        width:100px;
-        border:2px  #00001a;
-    }
-
-    .pic{ 
-
-        display: flex;
-        width:45vw;
-        height:45vh;
-        border: 2px #00001a;
-
-    }
-
-
-    .header{ 
-
-        display: flex;
-        width:45vw;
-        height:31vh;
-        border: 2px #00001a;
-        justify-content: space-between;
-
-    }
-
-
-    .mainheader{ 
-
-        display: flex;
-        width:20vw;
-        height:31vh;
-        border: 2px #00001a;
-        font-size: xxx-large;
-        align-items: center;
-        color: #020018;
+        .main{ 
+           
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;   
+            border-radius: 0px 0px 0px 0px;
+            
+        }
         
+        .child:nth-child(1){ 
+
+        border-radius: 10px 10px 0px 0px ;
+        }
+
+        .thirdchild:nth-child(3){ 
+
+            border-radius: 0px 0px 10px 10px ;
+        }
     }
 
-
-    .maincontent{ 
-
-        display: flex;
-        width: 20vw;
-        height:31vh;
-        border: 2px #00001a;
-        flex-direction: column;
-        justify-content: space-between;
-
-    }
-
-
-    .button{ 
-
-        display: flex;
-        width: 10vw;
-        height:5vh;
-        justify-content: center;
-        align-items: center;
-        background-color: #f15d51;
-        color: white;
-
-    }
-
-
-    .maincontents{ 
-
-        display: flex;
-        width: 20vw;
-        height:20vh;
-        border:2px solid white;
-        align-items: center;
-        color:#9b9b9f;
-
-    }
-
-
-    .lastfooter{ 
-
-        display: flex;
-        width:70vw;
-        height:42.5vh;
-        border: 2px solid white;
-        justify-content: space-between;
-        align-items: end;
-        
-    }
-
-
-    .reviving{ 
-
-        display: flex;
-        width:22vw;
-        height:35vh;
-        border: 2px solid white;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-
-    .laptops{ 
-    
-        display: flex;
-        width:22vw;
-        height:35vh;
-        border: 2px solid white;
-        justify-content: space-between;
-
-    }
-
-
-    .gaming{ 
-        
-        display: flex;
-        width:22vw;
-        height:35vh;
-        border: 2px solid white;
-        justify-content: space-between;
-
-    }
-
-
-    .pcpic{ 
-
-        display: flex;
-        width:8vw;
-        
-        border: 2px solid white;
-
-    }
-
-    .pcinf{ 
-
-        display: flex;
-        width:12vw;
-        height:35vh;
-        border: 2px solid white;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-    }
-
-
-    .lappic{ 
-
-        display: flex;
-        width:8vw;
-        border: 2px solid white;
-
-    }
-
-
-    .lapinf{ 
-
-        display: flex;
-        width:12vw;
-        height:35vh;
-        border: 2px solid white;
-        flex-direction: column;
-        justify-content: space-evenly;
-        
-    }
-
-
-    .gamepic{ 
-
-        display: flex;
-        width:8vw;
-        border: 2px solid white;
-
-    }
-
-
-    .gameinf{ 
-
-        display: flex;
-        width:12vw;
-        height:35vh;
-        border: 2px solid white;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-    }
-
-
-    .pcpics{ 
-
-        width: 8vw;
-        height: 35vh;
-
-    }
-
-
-    .lappics{ 
-    
-        width: 8vw;
-        height: 35vh;
-        
-    }
-
-
-    .gamepics{ 
-
-        width: 8vw;
-        height: 35vh;
-    }
-
-
-    .webpic{ 
-
-        width:45vw;
-        height:45vh;
-    }
-
-    hr{ 
-
-        width: 20vw;
-        margin-left: 1vw;
-
-    }
-
-
-    .on{ 
-
-        color: #c8c5cd;
-    }
-
-
-    .two{ 
-
-        color:#c8c5cd;
-    }
-
-    
-    .three{ 
-
-        color:#c8c5cd;
-    }
-
-    .pclast{ 
-
-        color:#c8c5cd;
-    }
-
-
-    .laplast{ 
-
-        color:#c8c5cd;
-
-    }
-
-
-    .gamelast{ 
-
-        color:#c8c5cd;
-
-    }
-
-    .pchead{ 
-
-        color:#1f1d2e;
-    }
-
-    .laphead{ 
-
-        color:#1f1d2e;
-    }
-
-    .gamehead{ 
-
-        color:#1f1d2e;
-    }
-
-
-    .lines{ 
-
-        display: none;
-    }
-
-
-    @media (max-width:500px) { 
-
-
-        .pic{ 
-
-            width:100%;
-            
-        }
-
-        .webpic{
-
-            width:100%;
-        }
-
-
-        .lines{ 
-
-            display:block;
-            
-        }
-
-        .headline{ 
-
-            display: none;
-        }
-
-        article,.header{ 
-
-            display: block;
-        
-        }
-
-        .lastfooter{ 
-
-            display: block;
-        }
-
-        .mainheader,.maincontents{ 
-
-            display: block;
-
-        }
-
-        .information{ 
-
-            display: flex;
-            margin-top: 70%;
-            height: 140%;
-            justify-content: space-between;
-        }
-
-        .mid{ 
-
-            
-            width: 10vw;
-        
-        }
-
-
-        .lastfooter{ 
-
-            display: block;
-            
-        }
-
-        .header{ 
-
-            width: 100%;
-        }
-
-        .mainheader{ 
-
-            width: 100%;
-        }
-
-        .maincontent{ 
-
-            display: block;
-            width: 100%;
-        }
-
-        .maincontents{ 
-
-            display: block;
-            width:100%;
-            margin-top: 20%;
-        }
-
-        .button{ 
-
-            width: 40%;
-        }
-
-        .mainheader,.maincontents{ 
-
-            display: block;
-    
-        }
-
-        .information,.abouthydrogen,.aboutai,.aboutvs{ 
-
-            width: 100%;
-        }
-
-        .head{ 
-
-            width: 20%;
-        }
-
-        .mid,.last,.the,.what,.is,.private{ 
-
-            width:70%;
-        }
-
-        .lastfooter{ 
-
-            display: block;
-            width: 100%;
-            margin-top: 280%;
-            
-        }
-
-        .reviving,.laptops,.gaming{ 
-
-            width: 100%;
-        }
-
-        .pcpic,.pcinf{ 
-
-            width:50%;
-        }
-
-        .pcpics,.lappics,.gamepics{ 
-
-            width: 100%;
-        }
-
-        .lappic,.lapinf{    
-
-            width:50%
-        }
-
-        .gamepic,.gameinf{ 
-
-            width:50%;
-        }
-
-        .abouthydrogen{ 
-
-            align-items: start;
-        }
-
-
-        .mid{ 
-
-            width: 80%;
-            
-            
-        }
-
-        .head{ 
-
-            width:25%
-        }
-
-        .last{ 
-
-            width: 100%;
-            
-        }
-
-        hr{ 
-
-            width: 90%;
-            justify-content: center;
-        }
-
-        .the{
-
-            width: 89%;
-            
-        }
-
-        .what{ 
-
-            width:98%;
-            
-        }
-
-
-        .is{ 
-
-            width: 83%;
-
-        }
-
-
-        .private{ 
-
-            width:90%;
-        }
-
-        .laptops,.gaming{ 
-
-            margin-top: 10%;
-        }
-
-        .header{ 
-
-            margin-top: 10%;
-        }
-
-        .pic{ 
-
-            margin-top: 10%;
-        }
-        }
     
     
     </style>
 </head>
 <body>
-    <main>
-    
-        <section> 
 
-            <div class="logo">
-                <svg width="65" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M23.016 39.2c.317 0 .574-.093.77-.28.196-.187.294-.457.294-.812v-1.82c0-.448.033-.84.098-1.176.065-.336.145-.663.238-.98l5.09-18.122 4.822 18.57c.112.384.193.682.243.895l.023.099c.047.215.07.453.07.714v1.82c0 .355.098.625.294.812.196.187.453.28.77.28h10.696c.299 0 .55-.093.756-.28.205-.187.308-.457.308-.812v-1.82c0-.373.023-.705.07-.994.047-.29.135-.677.266-1.162L54.04 7.224c.299-1.25.765-2.254 1.4-3.01.635-.756 1.363-1.311 2.184-1.666l.672-.308c.336-.168.574-.331.714-.49.14-.159.21-.369.21-.63 0-.336-.117-.607-.35-.812C58.637.103 58.287 0 57.82 0h-8.904c-.467 0-.817.103-1.05.308-.233.205-.35.476-.35.812 0 .261.06.471.182.63.121.159.313.303.574.434l.616.224c1.12.41 1.871.999 2.254 1.764s.453 1.661.21 2.688l-5.535 23.486-6.477-25.81c-.133-.58-.17-1.018-.11-1.31l.026-.104c.093-.29.317-.49.672-.602l1.232-.336c.299-.112.518-.257.658-.434a.986.986 0 0 0 .21-.63c0-.355-.112-.63-.336-.826C41.468.098 41.122 0 40.656 0H24.78c-.448 0-.789.098-1.022.294-.233.196-.35.471-.35.826 0 .224.06.415.182.574.121.159.322.294.602.406l1.176.42c.261.093.462.243.602.448.14.205.294.607.462 1.204l1.751 6.742-5.553 19.475L16.128 4.48c-.147-.49-.194-.898-.14-1.223l.028-.135c.093-.345.327-.574.7-.686l1.456-.336c.504-.168.756-.504.756-1.008 0-.336-.112-.602-.336-.798C18.368.098 18.022 0 17.556 0H1.344C.896 0 .56.098.336.294.112.49 0 .756 0 1.092c0 .224.056.434.168.63.112.196.29.35.532.462l1.232.392c.355.13.625.308.812.532.187.224.345.579.476 1.064l7.84 30.408c.112.43.191.751.238.966.047.215.07.462.07.742v1.82c0 .355.103.625.308.812.205.187.467.28.784.28h10.556Zm34.804.7c1.195 0 2.263-.29 3.206-.868a6.338 6.338 0 0 0 2.24-2.338c.55-.98.826-2.04.826-3.178 0-1.157-.275-2.212-.826-3.164a6.325 6.325 0 0 0-2.24-2.282c-.943-.57-2.011-.854-3.206-.854-1.157 0-2.207.285-3.15.854a6.325 6.325 0 0 0-2.24 2.282c-.55.952-.826 2.007-.826 3.164 0 1.139.275 2.198.826 3.178.55.98 1.297 1.76 2.24 2.338.943.579 1.993.868 3.15.868Z" fill="#00001A"/></svg></div>
-
-            <div class="headline"> 
-                <div class="home"> Home</div>
-                <div class="new"> New</div>
-                <div class="popular"> Popular</div>
-                <div class="trending"> Trending</div>
-                <div class="categories"> Categories</div>
+    <div class="main"> 
+        <div class="child">
+            <img class="logo"
+            src="images/icon-sedans.svg"> 
+            <div class="sedans"><h3> SEDANS </h3></div>
+            <div class="content"> Choose sedans for its affordability and excellent fuel ecomomy.Ideal for cruising in the city or on your next road trip.</div>
+            <div class="button">
+                <div class="learnmore"> Learn More</div>
             </div>
-
-            
-            <img class="lines"s
-                
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEX///8AAADl5eX09PTV1dUICAiurq5TU1Orq6tJSUnc3Nzt7e1ERET6+vpRUVG9vb0gCS9GAAAA8ElEQVR4nO3dOQ4CQRAEQZblPv//W2yUFsLoNSKekGb1SLPbAQAAAAAAAAAAAADfbodh9+kC9ViGXaYL1Hm6yWm6QGlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJnWdbrLBjXqd9pwuAAAAAMCvzstx1Ba3x9f09rjBJjbq0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClvQet9mnW5TRcAAAAAgP/d98PW6QJljy27fWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJuWPs3LLAAAAAAAAAAAAAGAbPhzZL1DD5UvKAAAAAElFTkSuQmCC">
-        
-        </section>
-        
-        <article> 
-
-            <footer> 
-
-                <div class="pic"> 
-                    <img class="webpic"
-                    src="image-web-3-desktop.jpg">
-                </div>
-
-                <div class="header"> 
-
-                    <div class="mainheader"> The Bright Future of Web 3.0? </div>
-
-
-                    <div class="maincontent"> 
-
-                        <div class="maincontents"> We dive into the next evolution  of the web that claims to put the power of the platforms back into the hands of the people. But is it really fullfilling its promise?</div>
-
-                        <div class="button"> READ MORE </div>
-                    </div>
-                </div>
-            </footer>
-
-            <div class="information"> 
-
-                <div class="abouthydrogen"> 
-                    <div class="head"> <h1>New</h1> </div>
-                    <div class="mid"> <h3> Hydrogen VS Electric Cars </h3> </div>
-                    <div class="last"> <p> Will hydrogen-fueled cars ever catch up to EVs? </p> </div>
-                    <hr> 
-                </div>
-                
-                
-                <div class="aboutai">
-                    <div class="the"> <h3> The Downsides of AI Artistry </h3> </div>
-                    <div class="what"> What are the possible adverse effects of <br> on-demand AI image generation? </div>
-                    <hr> 
-                </div>
-
-
-                <div class="aboutvs">
-                    <div class="is"> <h3> Is VS Funding Drying Up? </h3> </div>
-                    <div class="private"> Private funding by VC films is down 50% YOY.We take a look at what that means. </div>
-                    
-                </div>
-            </div>
-
-        </article>
-
-        <div class="lastfooter"> 
-
-            <div class="reviving"> 
-
-                <div class="pcpic">
-
-                    <img class="pcpics"
-                    src="image-retro-pcs.jpg"> 
-                </div>
-                <div class="pcinf"> 
-                    <div class="on"> <h1> 01 </h1> </div>
-                    <div class="pchead"> <h4> Reviving Retro PCs </h4> </div>
-                    <div class="pclast">  <p> What happens when old PCs are given modern upgrades? </p> </div>
-                </div>
-            </div>
-
-            
-            <div class="laptops"> 
-                <div class="lappic"> 
-                    <img class="lappics"
-                    src="image-top-laptops.jpg">
-                </div>
-                <div class="lapinf"> 
-                    <div class="two"> <h1> 02</h1></div>
-                    <div class="laphead"> <h4> Top 10 Laptops of 2022 </h4> </div>
-                    <div class="laplast"> <P> Our best pic for verious needs and budgets. </P> </div>
-                </div>
-            </div>
-
-            <div class="gaming">
-                <div class="gamepic"> 
-                    <img class="gamepics"
-                    src="image-gaming-growth.jpg">
-                </div>
-                <div class="gameinf">
-                    <div class="three"> <h1> 03 </h1> </div>
-                    <div class="gamehead"> <h4> The Grouth of Gaming </h4> </div>
-                    <div class="gamelast"> <p> How the pandemic has sparked fresh opportunities. </p> </div>
-                </div>
-             </div>
-
         </div>
-    </main>
+
+        <div class="secondchild">
+            <img class="logosuvs"
+            src="images/icon-suvs.svg"> 
+            <div class="suvs"><h3> SUVS </h3></div>
+            <div class="contents"> Take SUV for spacious interior, power, and verstility. Perfectfor your next family vacation and off-road adventures. </div>
+            <div class="buttons">
+                <div class="learnnmore"> Learn More </div>
+            </div>
+        </div>
+
+        <div class="thirdchild">
+            <img class="logoluxury"
+            src="images/icon-luxury.svg"> 
+            <div class="luxury"><h3> LUXURY </h3></div>
+            <div class="contents"> cruise  in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</div>
+            <div class="button">
+                <div class="learnsmore"> Learn More </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html> 
+</html>
